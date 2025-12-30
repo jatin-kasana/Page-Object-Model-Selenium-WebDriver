@@ -1,22 +1,22 @@
-package com.Easycalcul.Pages;
+package com.Assignment3;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginEasyCalTest {
+public class LoginHollandandBarrettTest {
 	WebDriver driver;
 	//Create Constructor
-	public LoginEasyCalTest(WebDriver driver) {
+	public LoginHollandandBarrettTest(WebDriver driver) {
 		this.driver = driver;
 	}
-	@FindBy(id = "log_email")
+	@FindBy(id = "username")
 	WebElement email;
 	
-	@FindBy(id = "log_password")
+	@FindBy(id = "password")
 	WebElement password;
 	
-	@FindBy(id = "//input[contains(@name, 'log_submit')]")
+	@FindBy(name = "action")
 	WebElement loginbtn;
 	
 	//Create Method 
